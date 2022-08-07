@@ -1,0 +1,115 @@
+:root{
+--texto_negritas :'Abril Fatface', cursive;
+--parrafo:'Cinzel', serif;
+--precio:'Lobster', cursive;
+--titulo:'Raleway', sans-serif;
+}
+
+img{
+    border-radius: 10px 0 0 10px;
+}
+body{
+    background-color: rgb(245, 240, 240);
+}
+.card{
+    display: flex;
+    width: 500px;
+    height: 390px;
+    margin: 80px auto 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+}
+.Titulo{
+font-family: var(--titulo);
+}
+.Marca{
+font-family: var(--texto_negritas);
+font-size: 1.8rem;
+margin: 0;
+line-height: 1;
+}
+.ContenedorCardInfo{
+    padding: .9rem;
+
+}
+.Precio{
+    color: rgb(119, 179, 87);
+    font-family: var(--precio);
+    font-size: 1.5rem;
+}
+.Descripcion{
+  font-family: var(--parrafo);
+  font-size: 12px;
+  text-transform:lowercase;
+
+}
+.precioRebaja{
+    font-size: 10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-decoration: line-through;
+}
+.cardPrecios{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    font-weight: bold;
+    align-items: center;
+    
+}
+.btn{
+    display: flex;
+    background-color:rgb(61, 92, 61) ;
+    justify-content: center;
+    border-radius: 5px;
+    padding: .3rem;
+    margin-bottom: 10px;
+    align-items: center;
+    
+
+
+}
+
+.btn:hover{
+    background-color: rgb(48, 124, 79);
+    cursor: pointer;
+}
+.btn p{
+color: white;
+font-size: 12px;
+margin-left: 3px;
+font-weight: bold;
+}
+.imagen{
+    background-image: url("images/image-product-desktop.jpg");
+    width: 800px;
+    height:390px ;
+    border-radius: 10px 0 0 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width:600px){
+    .card{
+        flex-direction: column;
+        width: 80%;
+        height: 600px;
+        margin-top: 50px;
+    }
+    img{
+        border-radius: 10px 10px 0 0;
+    }
+    .imagen{
+        background-image: url("images//image-product-mobile.jpg");
+        
+        
+        width: auto;
+        height: 700px;
+        border-radius: 10px 10px 0 0;
+    }
+    .Precio{
+        margin-right: 1rem;
+    }
+   
+.cardPrecios{
+    justify-content: left;
+}
+}
